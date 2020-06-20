@@ -75,64 +75,53 @@
 <nav class="navbar navbar-expand-lg navbar-dark  fixed-top ">
       <div class="container text-uppercase p-2">
         
-  <a class="navbar-brand font-weight-bold text-white" href="index.html"><img src="images/logo_haryana_govt.png" ></a>
- <div>
-          <ul class="list-unstyled mb-0">
-        <!-- Facebook -->
-        <a href="#" class="p-2 fa-lg fb-ic">
-          <i class="fa fa-facebook-f blue-text"> </i>
-        </a>
-        <!-- Twitter -->
-        <a href="#" class="p-2 fa-lg tw-ic">
-          <i class="fa fa-twitter blue-text"> </i>
-        </a>
-        <!-- Instagram -->
-        <a href="#" class="p-2 fa-lg ins-ic">
-          <i class="fa fa-instagram blue-text"> </i>
-        </a>
-        <!-- You Tube -->
-        <a href="#" class="p-2 fa-lg ins-ic">
-          <i class="fa fa-youtube blue-text"> </i>
-        </a>
-        <!-- Whatsapp -->
-        <a href="#" class="p-2 fa-lg ins-ic">
-          <i class="fa fa-whatsapp blue-text"> </i>
-        </a>
-      </ul>
-      <div class="dropdown" >
-      <button class="dropbtn"  > <img  src="images/apple-touch-icon-72x72-precomposed.png"></button>
-  <div class="dropdown-content">
-    
-    <a class="nav-link" href="index.html"><i class="fa-2x fa fa-home"></i>Home <span class="sr-only">(current)</span></a>
+  <a class="navbar-brand font-weight-bold text-white" href="#"><img src="images/logo_haryana_govt.png" ></a>
+
+<div id="mySidenav" class="sidenav">
+
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a class="nav-link" href="index.html"><i class="fa-2x fa fa-home"></i>Home <span class="sr-only">(current)</span></a>
       
-        <a class="nav-link" href="directory.html"><i class="  fa fa-book"></i>Directory</a>
-        <a class="nav-link" href="#pricingdiv"><i class=" fa fa-newspaper-o"></i>NEWS FEEDS</a>
-        <a class="nav-link" href="#newsletterid"><i class=" fa fa-user"></i>about us</a>
-        <a class="nav-link" href="#contactid"><i class=" fa fa-laptop"></i>contact us</a>
-        <a class="nav-link" href="team.html"><i class=" fa fa-user"></i>Employee</a>
+        <a class="nav-link" href="directory.html"><i class="fa fa-book"></i>Directory</a>
+        <a class="nav-link" href="#pricingdiv"><i class="fa fa-newspaper-o"></i>NEWS FEEDS</a>
+        <a class="nav-link" href="#newsletterid"><i class="fa fa-user"></i>about us</a>
+        <a class="nav-link" href="#contactid"><i class="fa fa-laptop"></i>contact us</a>
+        <a class="nav-link" href="team.html"><i class="fa fa-user"></i>Employee</a>
         <a class="nav-link" href="institute.html"><i class="fa fa-university"></i>Institution</a>
-      </div>
-  </div>
-  </div>
+</div>
+
+<div id="main">
+  
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; MENU</span>
+</div>
+
+ 
+  
+</div>
 </nav>
+
+
 <div class="header" id="topheader"> 
 <section class="header-section">
-   <div class="centerimg"><a href="https://hrscert.kidyaan.com/" target="_blank"><img src="images/kidgyan1.png" ></a></div>
-<div class="centerimg1"><a href="#"><img src="images/indian-flag2.png" ></a></div>
-<h2 class="display-6"style="font-family:Palatino Linotype;">Welcome</h2>
-    <h5 style="font-family:Palatino Linotype;">Block Education Office Narnaund </h5>
-  <div class="center-div">
+<!--<div class="centerimg"><a href="https://hrscert.kidyaan.com/" target="_blank"><img src="images/kidgyan1.png" ></a></div>-->
 
+<div class="centerimg1" ><a href="#"><img class=" animate__animated   animate__pulse animate__infinite" src="images/indian-flag2.png" ></a></div>
+<div class="text-center">
+      <h2 class=" animate__animated   animate__pulse animate__infinite display-6"style="font-family:Palatino Linotype;">Welcome</h2>
+    <h3 class=" animate__animated   animate__backInUp  delay-05s display-6"style="font-family:Palatino Linotype; ">Block Education Office Narnaund </h3>
+</div>
+  <div class="center-div">
     <h1 class="font-weight-bold"></h1>
     <p>"We Don't See Things As they Are"</p>
+
     <div class="header-buttons">
 
       <a  class="fa-3x fa fa-" aria-hidden="true" href="#newsletterid">Help Desk</a>
-      <a  class="fa-3x fa fa-" aria-hidden="true" href="http://www.haryanaedusat.com/entertainment.php" target="_blank">E-Learning</a>
-
-
+      <a  class="fa-3x fa fa-" aria-hidden="true" href="http://www.haryanaedusat.com/entertainment.html" target="_blank">E-Learning</a>
   </div>
   </div>
+</section>
+</div>
 </section>
 
    <!--*************our  Directory Start*********--> 
@@ -487,6 +476,18 @@ function topFunction(){
 }
 
 </script>
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+  document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+}
 
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+  document.body.style.backgroundColor = "white";
+}
+</script>
 </body>
 </html>
