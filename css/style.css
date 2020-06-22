@@ -240,7 +240,7 @@ position: relative;
 	right: 0;
 
 z-index: -1;
-background: linear-gradient(160deg,#00abff 55%,#fff 0%);
+background: linear-gradient(150deg,#00abff 55%,#fff 0%);
 }
 .money{
 	font-size: 40px;
